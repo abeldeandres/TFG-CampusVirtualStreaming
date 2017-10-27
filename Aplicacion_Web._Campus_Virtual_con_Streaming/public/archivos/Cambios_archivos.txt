@@ -1,0 +1,12 @@
+listar_reuniones --> listar_temas
+crear_grupo --> crear_asignatura
+crear_grupo_datos --> crear_asignatura_datos
+listar_grupos --> listar_asignaturas
+modificar_grupo --> modificar_asignatura
+modificar_grupo_busqueda --> modificar_asignatura_busqueda
+modificar_grupos_busqueda_datos --> modificar_asignatura_busqueda_datos
+modificar_grupos_datos --> modificar_asignaturas_datos
+convocar_reuniones --> crear_temas
+modificar_reunion_asignaturas --> modificar_tema_asignaturas
+modificar_reunion_asignaturas_listado --> modificar_tema_asignaturas_listado
+modificar_reunion_asignaturas_listado_datos --> modificar_tema_asignaturas_listado_datos

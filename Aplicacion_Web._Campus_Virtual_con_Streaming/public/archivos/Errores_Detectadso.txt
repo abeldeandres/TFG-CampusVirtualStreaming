@@ -1,0 +1,4 @@
+
+Al modificar un usuario, el salt no lo hace bien, y no deja que se introduzca en la aplicacion web.
+Ver los radiobutton
+Ver porque se redirecciona mal al crear una asignatura.

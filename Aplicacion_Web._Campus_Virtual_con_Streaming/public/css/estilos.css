@@ -1,0 +1,321 @@
+/*** Estilos generales ***/
+body {
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	/*color:#2D2D2D;*/
+	color: #666666;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-image: url(../imagenes/Ravenna_570x300_scaled_cropp.jpg);
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.principal {
+	margin-top: 70px;
+	padding-top: 1.5em;
+}
+.principal .contenido{
+	padding-top: .5em;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/*** Login ***/
+body div.titulo-login {
+	display: block;
+	font-size: 1.3em;
+	/* trbl */
+	margin: 20px 0 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #333;
+	text-align: center;
+}
+
+/* Cabecera */
+.cabecera {
+	width: 100%;
+	height: 80px;
+	float: left;
+	position: absolute;
+	top: 0;
+	padding: .2em 2em 0 0;
+	/*Fondo*/
+	background-color: #121C23;
+	background-image: -webkit-linear-gradient(#233849, #121C23);
+	background-image: -moz-linear-gradient(top, #233849, #121C23);
+	background-image: -o-linear-gradient(top, #233849, #121C23);
+	/*Sombra*/
+	-webkit-box-shadow: 0 0 10px #735f5f;
+	-moz-box-shadow: 0 0 10px #735f5f;
+	box-shadow: 0 0 10px #735f5f;
+	/*color de letra*/
+	color: #FFF;
+}
+
+.cabecera.admin {
+	/*Fondo*/
+	background-color: #121C23;
+	background-image: -webkit-linear-gradient(#233849, #121C23);
+	background-image: -moz-linear-gradient(top, #233849, #121C23);
+	background-image: -o-linear-gradient(top, #233849, #121C23);
+}
+
+
+.cabecera.profesor {
+	/*Fondo*/
+	background-color: #231212;
+    background-image: -webkit-linear-gradient(#492323, #231212);
+	background-image: -moz-linear-gradient(top, #492323, #231212);
+	background-image: -o-linear-gradient(top, #492323, #231212);
+}
+
+
+.cabecera.alumno {
+	/*Fondo*/
+	background-color: #121C23;
+	background-image: -webkit-linear-gradient(#233849, #121C23);
+	background-image: -moz-linear-gradient(top, #233849, #121C23);
+	background-image: -o-linear-gradient(top, #233849, #121C23);
+}
+/*  */
+
+/*** Menu lateral ***/
+.menu-lateral .titulo {
+    font-weight: bold;
+    display: block;
+    background-color: rgba(177, 196, 196, 0.51);
+    width: 100%;
+    padding: 0.4em;
+    border-radius: 9px;
+}
+
+/*** Input Asignaturas ***/
+input.tituloAsignaturas  {
+	border-radius: 5px;
+	padding: 6px;
+	border: solid 1px #B3AAAA;
+    outline: 0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    width: 220px;
+    background: #E5E5E5;
+}
+
+
+/*** Formulario Asignaturas ***/
+/**************************************************************/
+
+
+/*Cabecera*/
+.cabecera {
+	width: 100%;
+	height: 80px;
+	float: left;
+	/*Fondo*/
+	background-color: #121C23;
+	background-image: -webkit-linear-gradient(#233849, #121C23);
+	background-image: -moz-linear-gradient(top, #233849, #121C23);
+	background-image: -o-linear-gradient(top, #233849, #121C23);
+	/*Sombra*/
+	-webkit-box-shadow: 0 0 10px #735f5f;
+	-moz-box-shadow: 0 0 10px #735f5f;
+	box-shadow: 0 0 10px #735f5f;
+	/*color de letra*/
+	color: #FFF;
+	/*border: 1px solid #ff9ec6;*/
+}
+
+.datos {
+	float: right;
+	width: auto;
+	height: 100%;
+	/*border: 1px solid #0F3;*/
+}
+
+.diseño {
+	padding-left: 10px;
+	height: 100%;
+	float: left;
+	width: 500px;
+	/*border: 1px solid #0F3;*/
+}
+
+
+
+.lateral {
+	float: left;
+	text-align: left;
+	width: 200px;
+	height: 100%;
+	margin-top: 5px;
+	margin-left: 5px;
+	/*border: 1px solid #30C;*/
+}
+
+.menu_cuadro {
+	width: auto;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #07B1F1;
+	padding: 2px;
+	margin-top: 2px;
+	/*Fondo*/
+	background-color: #0667C8;
+	background-image: -webkit-linear-gradient(#07B1F1, #0667C8);
+	background-image: -moz-linear-gradient(top, #07B1F1, #0667C8);
+	background-image: -o-linear-gradient(top, #07B1F1, #0667C8);
+	/*Sombra*/
+	-webkit-box-shadow: 0 0 10px #735f5f;
+	-moz-box-shadow: 0 0 10px #735f5f;
+	box-shadow: 0 0 10px #735f5f;
+	/*vertices redondeados*/
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/*Color de fuente*/
+	color: #FFFFFF;
+}
+
+ul {
+	margin: 0;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 5px;
+	list-style: none;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+/*
+a {
+	text-decoration: none;
+	color: #B1DCF5;
+}
+
+a:link {
+	text-decoration: none;
+	color: #B1DCF5;
+}
+
+a:hover {
+	font: 110% Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	color: #FFF;
+	text-shadow: 2px 2px 2px #444;
+}
+
+a:visited {
+	color: #FFF;
+}
+*/
+.medio {
+	/*border: 1px solid #F00;*/
+	position: absolute;
+	margin-top: 5px;
+	top: 81px; /*margin-top:5px;*/
+	right: 0;
+	bottom: 0;
+	left: 206px;
+	height: 100%;
+	padding-left: 10px;
+}
+
+.formularios {
+	width: 100%;
+	float: left;
+}
+
+
+input[type=text],input[type=password], textarea {
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	width: 200px;
+	background: #FFFFFF;
+	color: #103C67;
+}
+
+textarea {
+	width: 500px;
+	max-width: 500px;
+	height: 150px;
+	line-height: 150%;
+	color: #103C67;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+	border-color: #C9C9C9;
+}
+
+.form label {
+	margin-left: 5px;
+	color: #666666;
+}
+
+.form_envio input {
+	width: auto;
+	padding: 9px 15px;
+	/*background: #617798; */
+	background: #0667C8;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.form_envio input:hover, input:focus {
+	border: 1px solid #0667C8;
+}
+
+#form_eliminar {
+	background: #C80202;
+}
+
+#form_eliminar:hover, #form_eliminar:focus {
+	background: #C80202;
+	border: 1px solid #C80202;
+}
+
+#form_modificar {
+	background: #0DC811;
+}
+
+#form_modificar:hover, #form_modificar:focus {
+	background: #0DC811;
+	border: 1px solid #0DC811;
+}

@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		// Bootstrap
+		link(rel='stylesheet', href='/css/bootstrap.css')
+		link(rel='stylesheet', href='/css/bootstrap-theme.css')
+		script(src='/js/lib/jquery-2.1.4.js')
+		script(src='/js/lib/bootstrap.js')
+
+		script(src='/js/lib/adapter.js')
+		script(src='/socket.io/socket.io.js')
+		
+		link(rel='stylesheet', href='/css/custom.css')
+		script(type='text/javascript').
+			var usuario = !{JSON.stringify(usuario)};
+			var info_sala = !{JSON.stringify(info_sala)};
+		title Streaming de !{JSON.stringify(usuario.nombre)}
+	body
+		.container
+			h1 Streaming de la tutoría: !{JSON.stringify(info_sala.nombre_recurso)} 
+			h1 Usuario: !{JSON.stringify(usuario.nombre)}
+						
+			.row
+				.col-md-8
+					.video-wrapper 
+						video#localVideo.own-video(muted autoplay)
+						video#remoteVideo.other-video(autoplay controls)
+				
+				.col-md-4
+					.panel.panel-default
+						.panel-body
+							#chat.mensajes 
+					
+							.entrada
+								textarea#chatMessage(rows='4')
+						
+								input(type='button', value='Enviar', onclick='sendChatMessage()')
+		
+		script(src='/js/prof.js')

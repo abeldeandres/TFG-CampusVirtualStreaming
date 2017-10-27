@@ -1,0 +1,50 @@
+public String imprimirArbol(){
+        Queue<nodoBinario> cola = new LinkedList<nodoBinario>();
+        String cadena="";
+        int nivel=0,nivelActual,alturaTotal = altura();
+        int d=2;
+        if(raiz!=null){
+            cola.add(raiz);            
+            d = 2*alturaTotal;
+        }
+        while(!cola.isEmpty()){
+            nodoBinario aux  = cola.poll();//cola.desencolar()
+            String desp = "";
+            try{
+                nivelActual = buscarNivelRec(raiz,(E)aux.getElemento());
+            }catch(ElementoNoEncontrado e){
+                nivelActual=-1;
+            }
+            if(nivel != nivelActual){
+                d=d/2;
+                nivel=nivelActual;
+                desp = desplazamiento(d);
+                cadena += "\n"+desp+aux.getElemento()+desp;
+            }
+            else{
+                desp= desplazamiento(d);
+                cadena += desp+aux.getElemento()+desp;
+            }
+            
+            if(aux.getHijoIzq() !=null) cola.add(aux.getHijoIzq());
+            if(aux.getHijoDer() !=null) cola.add(aux.getHijoDer());
+
+        }        
+        return cadena;
+    }
+    
+    private static String desplazamiento(int d) {
+        String esp="";
+        for(long i=0;i<d;i++){
+            esp+="-";
+        }
+        return esp;
+    }
+    
+
+private int buscarNivelRec(nodoBinario<E> nodo, E elemento)throws ElementoNoEncontrado{
+        if(nodo==null) throw  new ElementoNoEncontrado();
+        if(nodo.getElemento().compareTo(elemento)<0) return 1+ buscarNivelRec(nodo.getHijoDer(), elemento);
+        else if(nodo.getElemento().compareTo(elemento)>0)return 1 + buscarNivelRec(nodo.getHijoIzq(), elemento);
+        else return 0;
+    }

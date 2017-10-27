@@ -1,0 +1,5 @@
+http://programacion.jias.es/2012/12/php-diferencias-entre-require-include-require_once-include_once/
+http://desasof2004.blogspot.com.es/2009/06/costear-software-con-cocomo.html
+http://www.creativosonline.org/blog/12-texturas-gratuitas.html
+http://www.onsip.com/webrtc-sip-network/webrtc-video/webrtc-video-codec
+http://www.ramonmillan.com/tutoriales/webrealtimecommunications.php
